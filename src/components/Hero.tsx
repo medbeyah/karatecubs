@@ -16,8 +16,8 @@ const Hero: React.FC = () => {
           </p>
           <div className="mt-12">
             <img 
-              src="/src/assets/images/coupe.jpg"
-              alt="Karate competition trophy" 
+              src="/images/coupe.jpg"
+              alt="Karate competition trophy"
               className="rounded-lg shadow-lg w-full max-w-5xl mx-auto object-cover h-[400px]"
             />
           </div>

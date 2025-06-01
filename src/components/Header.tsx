@@ -18,13 +18,22 @@ const Header: React.FC = () => {
   return (
     <header className="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className={`flex flex-col ${dir === 'rtl' ? 'items-end text-right' : 'items-start text-left'}`}>
-          <h1 className="w-full text-2xl md:text-3xl font-bold text-red-700" dir={dir}>
-            {locale.header.title}
-          </h1>
-          <p className="w-full text-sm text-gray-600" dir={dir}>
-            {locale.header.subtitle}
-          </p>
+        <div className={`flex items-center space-x-4 ${dir === 'rtl' ? 'space-x-reverse' : ''}`}>
+          <a href="/" className="flex items-center">
+            <img 
+              src="/images/logo.png" 
+              alt={locale.header.title}
+              className="h-12 md:h-16 w-auto"
+            />
+          </a>
+          <div className="flex flex-col">
+            <h1 className={`text-xl md:text-3xl font-bold text-red-700 ${dir === 'rtl' ? 'text-right' : 'text-left'}`} dir={dir}>
+              {locale.header.title}
+            </h1>
+            <p className="text-xs sm:text-sm text-gray-600 whitespace-nowrap" dir={dir}>
+              {locale.header.subtitle}
+            </p>
+          </div>
         </div>
         
         <div className="lg:hidden">

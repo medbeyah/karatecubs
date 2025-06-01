@@ -1,7 +1,7 @@
 export const ar = {
   header: {
     title: "أشبال الكاراتيه",
-    subtitle: "تمكين الشباب من خلال الانضباط والرياضة",
+    subtitle: "أشبال اليوم أبطال الغد",
     nav: {
       activities: "الأنشطة",
       vision: "الرؤية والأهداف",

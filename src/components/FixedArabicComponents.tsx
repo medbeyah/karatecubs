@@ -4,6 +4,8 @@
  */
 
 import React from 'react';
+import coupeImage from '../assets/images/coupe.jpg?url';
+import presidentImage from '../assets/images/president.jpg?url';
 import { useLanguage } from '../hooks/useLanguage';
 import { 
   getArabicAlignmentClasses,
@@ -38,7 +40,7 @@ export const FixedHeroSection: React.FC = () => {
           </p>
           <div className="mt-12">
             <img 
-              src="/src/assets/images/coupe.jpg"
+              src={coupeImage}
               alt="Karate competition trophy" 
               className="rounded-lg shadow-lg w-full max-w-5xl mx-auto object-cover h-[400px]"
             />
@@ -180,7 +182,7 @@ export const FixedPresidentSection: React.FC = () => {
         }`}>
           <div className="lg:w-1/2">
             <img 
-              src="/src/assets/images/president.jpg"
+              src={presidentImage}
               alt="President Ahmed Alketab" 
               className="rounded-lg shadow-lg w-full max-w-md mx-auto"
             />
