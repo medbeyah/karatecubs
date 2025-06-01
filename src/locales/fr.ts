@@ -72,5 +72,16 @@ export const fr = {
       message: "Entrez votre message"
     }
   },
-  language: "Langue"
+  language: "Langue",
+  events: {
+    title: "Nos Derniers Événements",
+    description: "Voir les photos et vidéos de nos activités récentes:",
+    items: [
+      {
+        type: "image",
+        src: "/images/coupe.jpg",
+        caption: "Tournoi Régional 2025"
+      }
+    ]
+  }
 };

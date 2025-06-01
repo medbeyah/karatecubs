@@ -72,5 +72,16 @@ export const ar = {
       message: "أدخل رسالتك"
     }
   },
-  language: "اللغة"
+  language: "اللغة",
+  events: {
+    title: "أحدث فعالياتنا",
+    description: "شاهد صور وفيديوهات من أنشطتنا الأخيرة:",
+    items: [
+      {
+        type: "image",
+        src: "/images/coupe.jpg",
+        caption: "البطولة الإقليمية 2025"
+      }
+    ]
+  }
 };

@@ -72,5 +72,16 @@ export const en = {
       message: "Enter your message"
     }
   },
-  language: "Language"
+  language: "Language",
+  events: {
+    title: "Our Latest Events",
+    description: "See photos and videos from our recent activities:",
+    items: [
+      {
+        type: "image",
+        src: "/images/coupe.jpg",
+        caption: "Regional Tournament 2025"
+      }
+    ]
+  }
 };

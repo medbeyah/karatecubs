@@ -10,7 +10,7 @@ const PresidentSection: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center md:space-x-8">
           <div className="md:w-1/3 mb-8 md:mb-0">
             <img 
-              src="/assets/images/president/president.jpg"
+              src="/images/president.jpg"
               alt="President Ahmed El Ketab"
               className="rounded-full w-64 h-64 object-cover shadow-lg mx-auto border-4 border-red-700"
             />
