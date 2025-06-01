@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Arabic alignment styles */
+@import './styles/arabic-alignment.css';
+
+:root {
+  --primary-color: #dc2626;
+  --secondary-color: #1f2937;
+  --accent-color: #f59e0b;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Arabic/RTL support - Enhanced */
+html[lang="ar"],
+html[lang="ar"] body,
+[lang="ar"],
+[dir="rtl"] {
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+  text-align: right;
+  direction: rtl;
+}
+
+/* Ensure RTL alignment for all text elements */
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] p,
+html[lang="ar"] section {
+  direction: rtl;
+  text-align: right;
+}
+
+/* RTL Support */
+[dir="rtl"] .space-x-6 {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .space-x-4 {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .space-x-8 {
+  --tw-space-x-reverse: 1;
+}
+
+/* Comprehensive Arabic font declarations with high specificity */
+html[lang="ar"] *,
+html[lang="ar"] header,
+html[lang="ar"] header *,
+html[lang="ar"] nav,
+html[lang="ar"] nav *,
+html[lang="ar"] button,
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] h4,
+html[lang="ar"] h5,
+html[lang="ar"] h6,
+html[lang="ar"] p,
+html[lang="ar"] span,
+html[lang="ar"] div {
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+}
+
+/* Specific targeting for navigation elements */
+html[lang="ar"] .text-gray-800,
+html[lang="ar"] .text-gray-600,
+html[lang="ar"] .text-red-700,
+html[lang="ar"] .hover\:text-red-700,
+html[lang="ar"] button.text-gray-800,
+html[lang="ar"] button.hover\:text-red-700 {
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+}
+
+/* Mobile menu specific targeting */
+html[lang="ar"] .lg\:hidden button,
+html[lang="ar"] .lg\:hidden .text-gray-800 {
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+}
+
+/* Ensure RTL text alignment for Arabic */
+html[lang="ar"] .text-left {
+  text-align: right !important;
+}
+
+/* Override Tailwind's font-sans for Arabic */
+html[lang="ar"] .font-sans {
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+}
+
+/* Ensure all text elements use Arabic font */
+html[lang="ar"] .antialiased {
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+}
+
+/* Animation for section transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 0.8s ease-out forwards;
+}

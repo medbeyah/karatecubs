@@ -1,0 +1,360 @@
+/**
+ * Arabic Text Alignment Solutions
+ * Comprehensive CSS for proper Arabic text alignment
+ */
+
+/* =============================================================================
+   GLOBAL ARABIC TEXT ALIGNMENT
+   ============================================================================= */
+
+/* Base Arabic text alignment - applies to all Arabic content */
+html[lang="ar"] {
+  direction: rtl;
+  text-align: right;
+}
+
+html[lang="ar"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* =============================================================================
+   REUSABLE ARABIC ALIGNMENT CLASSES
+   ============================================================================= */
+
+/* Arabic text container - wraps Arabic content with proper alignment */
+.arabic-text-container {
+  direction: rtl;
+  text-align: right;
+}
+
+.arabic-text-container * {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Arabic section wrapper - for entire sections with Arabic content */
+.arabic-section {
+  direction: rtl;
+}
+
+.arabic-section h1,
+.arabic-section h2,
+.arabic-section h3,
+.arabic-section h4,
+.arabic-section h5,
+.arabic-section h6 {
+  text-align: right;
+  direction: rtl;
+}
+
+.arabic-section p,
+.arabic-section div,
+.arabic-section span {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Arabic content block - for individual content blocks */
+.arabic-content {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+.arabic-content * {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+/* =============================================================================
+   SPECIFIC ELEMENT ALIGNMENT FIXES
+   ============================================================================= */
+
+/* Main titles and headings */
+.arabic-title {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+/* Subtitles and descriptions */
+.arabic-subtitle {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+/* Paragraph content */
+.arabic-paragraph {
+  text-align: right !important;
+  direction: rtl !important;
+  line-height: 1.8; /* Better line height for Arabic text */
+}
+
+/* =============================================================================
+   GRID AND FLEX LAYOUT FIXES
+   ============================================================================= */
+
+/* Grid layouts with Arabic content */
+.arabic-grid {
+  direction: rtl;
+}
+
+.arabic-grid .grid-item {
+  text-align: right;
+  direction: rtl;
+}
+
+.arabic-grid .grid-item h1,
+.arabic-grid .grid-item h2,
+.arabic-grid .grid-item h3,
+.arabic-grid .grid-item h4,
+.arabic-grid .grid-item h5,
+.arabic-grid .grid-item h6,
+.arabic-grid .grid-item p,
+.arabic-grid .grid-item div {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Flex layouts with Arabic content */
+.arabic-flex {
+  direction: rtl;
+}
+
+.arabic-flex .flex-item {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Card layouts with Arabic content */
+.arabic-card {
+  direction: rtl;
+  text-align: right;
+}
+
+.arabic-card h1,
+.arabic-card h2,
+.arabic-card h3,
+.arabic-card h4,
+.arabic-card h5,
+.arabic-card h6,
+.arabic-card p,
+.arabic-card div {
+  text-align: right;
+  direction: rtl;
+}
+
+/* =============================================================================
+   OVERRIDE CENTER ALIGNMENT FOR ARABIC
+   ============================================================================= */
+
+/* Override center alignment when Arabic is active */
+html[lang="ar"] .text-center {
+  text-align: right !important;
+}
+
+html[lang="ar"] .text-center h1,
+html[lang="ar"] .text-center h2,
+html[lang="ar"] .text-center h3,
+html[lang="ar"] .text-center h4,
+html[lang="ar"] .text-center h5,
+html[lang="ar"] .text-center h6,
+html[lang="ar"] .text-center p {
+  text-align: right !important;
+}
+
+/* Specific override for centered content in Arabic */
+html[lang="ar"] .force-center {
+  text-align: center !important;
+}
+
+/* =============================================================================
+   SECTION-SPECIFIC FIXES
+   ============================================================================= */
+
+/* Hero section Arabic alignment */
+html[lang="ar"] .hero-section {
+  direction: rtl;
+}
+
+html[lang="ar"] .hero-section h1,
+html[lang="ar"] .hero-section p {
+  text-align: right !important;
+}
+
+/* Activities section Arabic alignment */
+html[lang="ar"] .activities-section {
+  direction: rtl;
+}
+
+html[lang="ar"] .activities-section h2,
+html[lang="ar"] .activities-section p {
+  text-align: right !important;
+}
+
+html[lang="ar"] .activities-section .activity-card {
+  text-align: right;
+  direction: rtl;
+}
+
+html[lang="ar"] .activities-section .activity-card h3,
+html[lang="ar"] .activities-section .activity-card p {
+  text-align: right !important;
+}
+
+/* Vision section Arabic alignment */
+html[lang="ar"] .vision-section {
+  direction: rtl;
+}
+
+html[lang="ar"] .vision-section h2,
+html[lang="ar"] .vision-section p {
+  text-align: right !important;
+}
+
+html[lang="ar"] .vision-section .vision-item {
+  text-align: right;
+  direction: rtl;
+}
+
+html[lang="ar"] .vision-section .vision-item h3,
+html[lang="ar"] .vision-section .vision-item p {
+  text-align: right !important;
+}
+
+/* President section Arabic alignment */
+html[lang="ar"] .president-section {
+  direction: rtl;
+}
+
+html[lang="ar"] .president-section h2,
+html[lang="ar"] .president-section p {
+  text-align: right !important;
+}
+
+/* Contact section Arabic alignment */
+html[lang="ar"] .contact-section {
+  direction: rtl;
+}
+
+html[lang="ar"] .contact-section h2,
+html[lang="ar"] .contact-section p,
+html[lang="ar"] .contact-section label {
+  text-align: right !important;
+}
+
+/* =============================================================================
+   RESPONSIVE ARABIC ALIGNMENT
+   ============================================================================= */
+
+/* Mobile Arabic alignment */
+@media (max-width: 768px) {
+  html[lang="ar"] .mobile-arabic-center {
+    text-align: center !important;
+  }
+  
+  html[lang="ar"] .mobile-arabic-right {
+    text-align: right !important;
+  }
+}
+
+/* Tablet Arabic alignment */
+@media (min-width: 769px) and (max-width: 1024px) {
+  html[lang="ar"] .tablet-arabic-right {
+    text-align: right !important;
+  }
+}
+
+/* Desktop Arabic alignment */
+@media (min-width: 1025px) {
+  html[lang="ar"] .desktop-arabic-right {
+    text-align: right !important;
+  }
+}
+
+/* =============================================================================
+   UTILITY CLASSES FOR MIXED CONTENT
+   ============================================================================= */
+
+/* For content that should remain centered regardless of language */
+.always-center {
+  text-align: center !important;
+}
+
+.always-center * {
+  text-align: center !important;
+}
+
+/* For content that should always be right-aligned */
+.always-right {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+.always-right * {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+/* For content that should always be left-aligned */
+.always-left {
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+.always-left * {
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+/* =============================================================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================================================= */
+
+/* Contain layout changes to improve performance */
+.arabic-container {
+  contain: layout style;
+}
+
+/* GPU acceleration for smooth transitions */
+.arabic-transition {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* =============================================================================
+   ACCESSIBILITY IMPROVEMENTS
+   ============================================================================= */
+
+/* Ensure proper reading order for screen readers */
+html[lang="ar"] [role="main"],
+html[lang="ar"] [role="article"],
+html[lang="ar"] [role="section"] {
+  direction: rtl;
+}
+
+/* Focus indicators for RTL */
+html[lang="ar"] *:focus {
+  outline-offset: 2px;
+}
+
+/* =============================================================================
+   DEBUGGING HELPERS
+   ============================================================================= */
+
+/* Debug class to visualize Arabic text containers */
+.debug-arabic {
+  border: 2px solid red !important;
+  background-color: rgba(255, 0, 0, 0.1) !important;
+}
+
+.debug-arabic::before {
+  content: "Arabic Container";
+  position: absolute;
+  top: -20px;
+  right: 0;
+  background: red;
+  color: white;
+  padding: 2px 4px;
+  font-size: 10px;
+  z-index: 1000;
+}
