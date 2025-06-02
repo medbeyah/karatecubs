@@ -8,11 +8,11 @@ const VisionSection: React.FC = () => {
 
   return (
     <section id="vision" className="py-16 bg-gray-50" dir="rtl">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-4 text-right text-gray-800">
+      <div className="container mx-auto px-4" style={{direction: 'rtl', textAlign: 'right'}}>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800" style={{textAlign: 'right'}}>
           {locale.vision.title}
         </h2>
-        <p className="text-lg text-right mb-12 max-w-3xl mx-auto">
+        <p className="text-lg mb-12" style={{textAlign: 'right'}}>
           {locale.vision.description}
         </p>
         

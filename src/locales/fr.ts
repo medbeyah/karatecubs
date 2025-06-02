@@ -1,6 +1,6 @@
 export const fr = {
   header: {
-    title: "Ashbal Karate",
+    title: "KarateCubs",
     subtitle: "Responsabiliser les jeunes par la discipline et le sport",
     nav: {
       activities: "Activités",
@@ -11,7 +11,7 @@ export const fr = {
   },
   president: {
     title: "Président – Ahmed El Ketab",
-    bio: "Ahmed El Ketab est le président d'Ashbal Karate. Il a représenté la Mauritanie dans des compétitions internationales de karaté au Sénégal, au Cameroun, en Tunisie, en Turquie et aux États-Unis."
+    bio: "Ahmed El Ketab est le président de KarateCubs. Il a représenté la Mauritanie dans des compétitions internationales de karaté au Sénégal, au Cameroun, en Tunisie, en Turquie et aux États-Unis."
   },
   activities: {
     title: "Nos Activités",
@@ -37,7 +37,7 @@ export const fr = {
   },
   vision: {
     title: "Notre Vision et Nos Objectifs",
-    description: "À Ashbal Karate, nous nous engageons à:",
+    description: "À KarateCubs, nous nous engageons à:",
     items: [
       {
         title: "Promouvoir le Karaté",
