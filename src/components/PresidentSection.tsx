@@ -19,9 +19,17 @@ const PresidentSection: React.FC = () => {
             <h2 className="text-3xl font-bold mb-6 text-gray-800 text-center md:text-left">
               {locale.president.title}
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
               {locale.president.bio}
             </p>
+            <div className="flex justify-center md:justify-start gap-2">
+              <img src="/images/flags/mr.svg" alt="Mauritania" className="w-8 h-6 rounded-sm shadow" />
+              <img src="/images/flags/sn.svg" alt="Senegal" className="w-8 h-6 rounded-sm shadow" />
+              <img src="/images/flags/cm.svg" alt="Cameroon" className="w-8 h-6 rounded-sm shadow" />
+              <img src="/images/flags/tn.svg" alt="Tunisia" className="w-8 h-6 rounded-sm shadow" />
+              <img src="/images/flags/tr.svg" alt="Turkey" className="w-8 h-6 rounded-sm shadow" />
+              <img src="/images/flags/us.svg" alt="United States" className="w-8 h-6 rounded-sm shadow" />
+            </div>
           </div>
         </div>
       </div>
