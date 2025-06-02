@@ -17,20 +17,20 @@ const Header: React.FC = () => {
 
   return (
     <header className="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className={`flex items-center space-x-4 ${dir === 'rtl' ? 'space-x-reverse' : ''}`}>
-          <a href="/" className="flex items-center">
+      <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
+        <div className={`flex flex-row items-center space-x-4 ${dir === 'rtl' ? 'space-x-reverse' : ''}`}>
+          <a href="/" className="flex">
             <img 
               src="/images/logo.png" 
               alt={locale.header.title}
               className="h-12 md:h-16 w-auto"
             />
           </a>
-          <div className="flex flex-col">
-            <h1 className={`text-xl md:text-3xl font-bold text-red-700 ${dir === 'rtl' ? 'text-right' : 'text-left'}`} dir={dir}>
+          <div className="flex flex-col items-center sm:items-start">
+            <h1 className={`text-xl md:text-3xl font-bold text-red-700 text-center sm:text-left ${dir === 'rtl' ? 'sm:text-right' : 'sm:text-left'}`} dir={dir}>
               {locale.header.title}
             </h1>
-            <p className="text-xs sm:text-sm text-gray-600 whitespace-nowrap" dir={dir}>
+            <p className="hidden sm:block text-xs sm:text-sm text-gray-600 whitespace-nowrap px-1" dir={dir}>
               {locale.header.subtitle}
             </p>
           </div>
@@ -47,10 +47,10 @@ const Header: React.FC = () => {
         </div>
         
         <nav className={`hidden lg:flex items-center space-x-6 ${dir === 'rtl' ? 'space-x-reverse' : ''}`}>
-          <button 
-            onClick={() => handleScroll('activities')} 
-            className="text-gray-800 hover:text-red-700 transition duration-150"
-          >
+            <button 
+              onClick={() => handleScroll('activities')} 
+              className="text-lg text-gray-800 hover:text-red-700 transition duration-150 py-3 px-4"
+            >
             {locale.header.nav.activities}
           </button>
           <button 

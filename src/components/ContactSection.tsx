@@ -35,13 +35,13 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-16">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
+    <section id="contact" className="py-12 sm:py-16">
+      <div className="container mx-auto px-4 sm:px-6">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center text-gray-800">
           {locale.contact.title}
         </h2>
 
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="max-w-4xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-8 sm:gap-12">
           <div>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
@@ -55,7 +55,7 @@ const ContactSection: React.FC = () => {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-base"
                   placeholder={locale.contact.placeholders.name}
                 />
               </div>
@@ -91,7 +91,7 @@ const ContactSection: React.FC = () => {
               </div>
               <button
                 type="submit"
-                className="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-6 rounded-md transition duration-150 ease-in-out"
+                className="bg-red-700 hover:bg-red-800 text-white font-bold py-3 px-8 rounded-md transition duration-150 ease-in-out text-base"
               >
                 {locale.contact.submit}
               </button>
@@ -121,7 +121,7 @@ const ContactSection: React.FC = () => {
               <img 
                 src="https://images.pexels.com/photos/7045551/pexels-photo-7045551.jpeg"
                 alt="Karate training"
-                className="rounded-lg shadow-md max-h-64 object-cover"
+                className="rounded-lg shadow-md h-48 sm:h-64 w-full object-cover mt-6 sm:mt-8"
               />
             </div>
           </div>
