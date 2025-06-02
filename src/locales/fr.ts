@@ -81,6 +81,21 @@ export const fr = {
         type: "image",
         src: "/images/coupe.jpg",
         caption: "Tournoi Régional 2025"
+      },
+      {
+        type: "image",
+        src: "/images/ourwork/coupe.jpg",
+        caption: "Compétition de Karaté 2025"
+      },
+      {
+        type: "video",
+        src: "/images/ourwork/Oussra.MP4",
+        caption: "Points Forts de la Séance d'Entraînement"
+      },
+      {
+        type: "image",
+        src: "/images/ourwork/Small Billboard small copyk.jpg",
+        caption: "Événement Communautaire"
       }
     ]
   }

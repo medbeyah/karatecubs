@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../hooks/useLanguage';
+import VideoPlayer from './VideoPlayer';
 
 const EventsSection: React.FC = () => {
   const { locale } = useLanguage();
@@ -24,14 +25,11 @@ const EventsSection: React.FC = () => {
                   className="w-full h-64 object-cover"
                 />
               ) : (
-                <div className="relative pt-[56.25%]"> {/* 16:9 aspect ratio */}
-                  <iframe 
-                    src={item.src}
-                    className="absolute top-0 left-0 w-full h-full"
-                    frameBorder="0"
-                    allowFullScreen
-                  />
-                </div>
+                <VideoPlayer 
+                  src={item.src}
+                  caption={item.caption}
+                  className="w-full h-64"
+                />
               )}
               <div className="p-4 bg-white">
                 <p className="text-gray-600">{item.caption}</p>

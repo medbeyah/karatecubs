@@ -81,6 +81,16 @@ export const en = {
         type: "image",
         src: "/images/coupe.jpg",
         caption: "Regional Tournament 2025"
+      },
+      {
+        type: "image",
+        src: "/images/ourwork/coupe.jpg",
+        caption: "Karate Competition 2025"
+      },
+      {
+        type: "image",
+        src: "/images/ourwork/Small Billboard small copyk.jpg",
+        caption: "Community Event"
       }
     ]
   }
