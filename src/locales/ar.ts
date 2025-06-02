@@ -73,30 +73,4 @@ export const ar = {
     }
   },
   language: "اللغة",
-  events: {
-    title: "أحدث فعالياتنا",
-    description: "شاهد صور وفيديوهات من أنشطتنا الأخيرة:",
-    items: [
-      {
-        type: "image",
-        src: "/images/coupe.jpg",
-        caption: "البطولة الإقليمية 2025"
-      },
-      {
-        type: "image",
-        src: "/images/ourwork/coupe.jpg",
-        caption: "مسابقة الكاراتيه 2025"
-      },
-      {
-        type: "video",
-        src: "/images/ourwork/Oussra.MP4",
-        caption: "أبرز جلسات التدريب"
-      },
-      {
-        type: "image",
-        src: "/images/ourwork/Small Billboard small copyk.jpg",
-        caption: "فعالية مجتمعية"
-      }
-    ]
-  }
 };
