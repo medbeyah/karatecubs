@@ -10,7 +10,7 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Bungee', 'Poppins', 'sans-serif'],
+        sans: ['Futura', 'Bungee', 'Poppins', 'sans-serif'],
         'arabic': ['IBM Plex Sans Arabic', 'sans-serif'],
       },
       animation: {
